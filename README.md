@@ -7,7 +7,7 @@
 - 아래 예시 그림을 참고하여 구현
 - 유닛 테스트 코드를 작성
 
-<img src="https://ci3.googleusercontent.com/proxy/WZahMfjAJR_j4-FVS8fLVYK_gPXTWhze2sIfE9wvEuVsG9VqlQJjNnl-_KLYbMe4DkAppbcIDh556lxLx4uBErpAVS_9yslvxEbBq0GfBhUwd7MMeR9suEiVG0uoJzDZJr60_YzwqDDLOVW_4u8NkQLI4O1GRuQk_fB1ZWuN1dNUe1PeGvi8UPwizfy4SiYHdgJ8lVJcz0Pv5KPIirPKT3Qo6BY=s0-d-e1-ft#https://mail-attachments.greetinghr.com/20230425/6e083c69-4992-4b19-a35a-cf2363611086/iOS%20%EA%B3%BC%EC%A0%9C%20%EC%9D%B4%EB%AF%B8%EC%A7%80.png"  width="100%" height="100%"/>
+<img src="https://ci3.googleusercontent.com/proxy/WZahMfjAJR_j4-FVS8fLVYK_gPXTWhze2sIfE9wvEuVsG9VqlQJjNnl-_KLYbMe4DkAppbcIDh556lxLx4uBErpAVS_9yslvxEbBq0GfBhUwd7MMeR9suEiVG0uoJzDZJr60_YzwqDDLOVW_4u8NkQLI4O1GRuQk_fB1ZWuN1dNUe1PeGvi8UPwizfy4SiYHdgJ8lVJcz0Pv5KPIirPKT3Qo6BY=s0-d-e1-ft#https://mail-attachments.greetinghr.com/20230425/6e083c69-4992-4b19-a35a-cf2363611086/iOS%20%EA%B3%BC%EC%A0%9C%20%EC%9D%B4%EB%AF%B8%EC%A7%80.png"  width="35%" height="35%"/>
 
 [기능 명세]
 - API (회원가입 필요) : https://openweathermap.org/current 
