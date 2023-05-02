@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": -87.6298,
+        "lat": 41.8781
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 282.81,
+        "feels_like": 279.62,
+        "temp_min": 282.07,
+        "temp_max": 283.55,
+        "pressure": 1005,
+        "humidity": 54
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 7.1,
+        "deg": 305,
+        "gust": 10.67
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1683043027,
+    "sys": {
+        "type": 2,
+        "id": 2005153,
+        "country": "US",
+        "sunrise": 1683024337,
+        "sunset": 1683074955
+    },
+    "timezone": -18000,
+    "id": 4887398,
+    "name": "Chicago",
+    "cod": 200
+}
