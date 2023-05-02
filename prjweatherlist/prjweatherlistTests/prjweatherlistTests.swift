@@ -25,6 +25,44 @@ final class prjweatherlistTests: XCTestCase {
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
     
+    func testApi() {
+        
+        let issueExpectation = expectation(description: "API Test")
+        issueExpectation.expectedFulfillmentCount = 2
+        
+        APIService().requestWeather(lat: 41.8781, lon: -87.6298)
+            .debug()
+            .subscribe { [weak self] event in
+                switch event {
+                case .next(let data):
+                    print("next")
+                case .completed:
+                    print("completed")
+                    issueExpectation.fulfill()
+                case .error(let err):
+                    print("error : \(err)")
+                    XCTFail("testApi fail")
+                }
+            }
+        
+        APIService().requestForecast(lat: 41.8781, lon: -87.6298)
+            .debug()
+            .subscribe { [weak self] event in
+                switch event {
+                case .next(let data):
+                    print("next")
+                case .completed:
+                    print("completed")
+                    issueExpectation.fulfill()
+                case .error(let err):
+                    print("error : \(err)")
+                    XCTFail("testApi fail")
+                }
+            }
+        
+        wait(for: [issueExpectation], timeout: 5 * Double(issueExpectation.expectedFulfillmentCount))
+    }
+    
     func testWeather() {
         weatherTestFrom(mockname: "mock_weather_seoul")
         weatherTestFrom(mockname: "mock_weather_london")
