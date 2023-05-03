@@ -20,8 +20,9 @@ struct ResponseForecast: Codable, Equatable {
     }
     
     struct ListInfo: Codable, Equatable {
-        let dt: Int
+        let dt: Double
         let main: WIMain
         let weather: [WIWeather]
+        let dt_txt: String
     }
 }
