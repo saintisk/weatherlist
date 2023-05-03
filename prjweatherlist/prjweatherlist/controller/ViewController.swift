@@ -83,7 +83,7 @@ class ViewController: UIViewController {
             let listinfo = data.list[i]
             let dt = listinfo.dt
             let date = Date(timeIntervalSince1970: dt)
-            let dateComponent = Calendar.current.dateComponents(in: .gmt, from: date)
+            let dateComponent = Calendar.current.dateComponents(in: TimeZone(secondsFromGMT: 0)!, from: date)
             
             let now = Calendar.current.dateComponents(in: .current, from: Date())
             
