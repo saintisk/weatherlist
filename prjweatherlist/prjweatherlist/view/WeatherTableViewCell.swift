@@ -25,6 +25,7 @@ class WeatherTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        self.selectionStyle = .none
         self.contentView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         
         day = UILabel()
@@ -57,7 +58,7 @@ class WeatherTableViewCell: UITableViewCell {
         self.contentView.addSubview(temp_min)
         temp_min.snp.makeConstraints { make in
             make.trailing.equalToSuperview().offset(-8)
-            make.bottom.equalToSuperview().offset(-16)
+            make.centerY.equalTo(icon.snp.centerY)
         }
         
         temp_max = UILabel()
@@ -65,7 +66,7 @@ class WeatherTableViewCell: UITableViewCell {
         self.contentView.addSubview(temp_max)
         temp_max.snp.makeConstraints { make in
             make.trailing.equalTo(temp_min.snp.leading).offset(-16)
-            make.bottom.equalToSuperview().offset(-16)
+            make.centerY.equalTo(icon.snp.centerY)
         }
     }
     
